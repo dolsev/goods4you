@@ -5,4 +5,4 @@ To start an app, please:
 2) Write "vite" in terminal
 3) Open suggested link in terminal (http://localhost:5174/ by default)
 
-The app is created with styled-components, using atomic design approach
+The app is created with module.css, using atomic design approach

@@ -1,0 +1,21 @@
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.h1Title {
+    /* Your h1 styles */
+}
+
+.paragraph {
+    /* Your paragraph styles */
+}
+
+.paragraph.inverted {
+    color: white;
+}
+
+.section {
+    padding: 20px;
+}

@@ -1,13 +1,7 @@
-import styled from 'styled-components';
-
-const StyledLogo = styled.span<{ fontSize: string }>`
-  font-size: 30px;
-  font-weight: bold;
-  color:white;
-`;
+import styles from './atoms.module.css';
 
 const Logo = ({ text }: { text: string }) => {
-    return <StyledLogo>{text}</StyledLogo>;
+    return <span className={styles.logo}>{text}</span>;
 };
 
 export default Logo;

@@ -1,11 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import MainPageTemplate from './components/templates/MainPageTemplate';
-import GlobalStyles from './styles/GlobalStyles'; // Import GlobalStyles
+import styles from './main.module.css';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <GlobalStyles />
-        <MainPageTemplate />
+        <div className={styles.body}>
+            <div id="root" className={styles.root}>
+                <MainPageTemplate />
+            </div>
+        </div>
     </React.StrictMode>
 );

@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header>
             <Logo text={'Goods4you'}/>
-            <H1Title text={'Title'} theme={'base'}/>
+            <H1Title theme={'base'}>Title</H1Title>
             <Paragraph text={'hehe'} theme={'inverted'}/>
         </header>
     );
