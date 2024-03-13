@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import MainPageTemplate from './components/templates/MainPageTemplate';
+import GlobalStyles from './styles/GlobalStyles'; // Import GlobalStyles
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <React.StrictMode>
+        <GlobalStyles />
+        <MainPageTemplate />
+    </React.StrictMode>
+);
