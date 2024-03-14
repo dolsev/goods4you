@@ -1,7 +1,15 @@
-import styles from './atoms.module.css'; // Import CSS Modules
+// Paragraph.tsx
+import styles from './atoms.module.css';
 
-const Paragraph = ({ text, theme }: { text: string; theme: 'base' | 'inverted' }) => {
-    return <p className={`${styles.paragraph} ${theme === 'inverted' ? styles.inverted : ''}`}>{text}</p>;
+interface ParagraphProps {
+    children: React.ReactNode;
+    theme: 'base' | 'inverted';
+}
+
+const Paragraph = ({ children, theme }: ParagraphProps) => {
+    const themeClass = theme === 'inverted' ? styles.inverted : '';
+
+    return <p className={`${styles.paragraph} ${themeClass}`}>{children}</p>;
 };
 
 export default Paragraph;

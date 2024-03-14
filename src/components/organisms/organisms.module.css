@@ -1,0 +1,33 @@
+/* organisms.module.css */
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 320px) {
+    .headerContent {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .headerContent {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1180px) {
+    .headerContent {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1920px) {
+    .headerContent {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+}

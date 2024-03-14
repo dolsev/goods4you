@@ -1,3 +1,7 @@
+#root {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Jost', sans-serif;
@@ -7,6 +11,3 @@ body {
     overflow: hidden;
 }
 
-#root {
-    height: 100%;
-}

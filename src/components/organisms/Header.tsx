@@ -1,13 +1,16 @@
 import Logo from "../atoms/Logo";
-import H1Title from "../atoms/H1Title";
-import Paragraph from "../atoms/Paragraph";
+import NavMenu from "../molecules/NavMenu";
+import HorizontalLine from "../atoms/HorizontalLine";
+import styles from './organisms.module.css';
 
 const Header = () => {
     return (
         <header>
-            <Logo text={'Goods4you'}/>
-            <H1Title theme={'base'}>Title</H1Title>
-            <Paragraph text={'hehe'} theme={'inverted'}/>
+            <div className={styles.headerContent}>
+                <Logo>Goods4you</Logo>
+                <NavMenu/>
+            </div>
+            <HorizontalLine/>
         </header>
     );
 };

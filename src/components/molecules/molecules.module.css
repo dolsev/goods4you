@@ -1,0 +1,7 @@
+/* molecules.module.css */
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    gap:36px;
+}

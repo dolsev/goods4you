@@ -1,21 +1,98 @@
+/* atoms.module.css */
+
 .logo {
     font-size: 30px;
     font-weight: bold;
     color: white;
+    display: inline-block;
 }
 
 .h1Title {
-    /* Your h1 styles */
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .paragraph {
-    /* Your paragraph styles */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navLink {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navLink:last-child {
+    margin-bottom: 0;
 }
 
 .paragraph.inverted {
     color: white;
 }
 
-.section {
-    padding: 20px;
+.horizontalLine {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.inverted {
+    color: white;
+}
+/* atoms.module.css */
+
+.button {
+    width: 201px;
+    height: 67px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.primary {
+    background-color: #F14F4F;
+    color: white;
+}
+
+.primary::selection {
+    background-color: #FFA500;
+    color: white;
+}
+
+.secondary {
+    width: 239px;
+    background-color: #444B58;
+    color: #ffffff;
+}
+
+.secondary::selection {
+    background-color: #FFF4EE;
+    color: #444B58;
+}
+
+.ghost {
+    width: 239px;
+    background-color: #FFF4EE;
+    color: #444B58;
+    border: 1px solid transparent;
+}
+
+.ghost::selection {
+    outline: 1px solid #444B58;
+}
+
+.outline {
+    width: 148px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #444B58;
+    color: #444B58;
+}
+
+.outline::selection {
+    outline: 1px solid transparent;
 }
